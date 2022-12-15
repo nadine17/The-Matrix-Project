@@ -329,7 +329,7 @@ ul {
 .title {
   padding: 10px;
   border: 2px solid black;
-  margin: 100px auto;
+  margin: 0 auto 80px;
   width: fit-content;
   position: relative;
   transition: var(--main-transition);
