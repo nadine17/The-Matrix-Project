@@ -141,7 +141,7 @@ ul {
   width: 100%;
   padding: 30px;
   border-bottom: 4px solid var(--main-color);
-  background-color: var(--section-background);
+  background-color: white;
   z-index: -1;
   display: flex;
   gap: 40px;
@@ -197,7 +197,7 @@ ul {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #e6e2e2;
+  background-color: #fafafa;
   z-index: -1;
   transition: 0.4s;
   border-radius: 3px;
