@@ -302,9 +302,10 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   transition: var(--main-transition);
+}
+.go-down i {
   animation: bouncing 1.5s infinite;
 }
-
 @keyframes bouncing {
   0%,
   10%,
