@@ -703,3 +703,66 @@ ul {
   color: #777;
 }
 /* testimonials */
+
+/*  TEAM MEMBERS */
+.team {
+  padding: var(--main-padding);
+}
+.team .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}
+.team .container .card {
+  position: relative;
+  margin: 50px 0;
+}
+.team .container .card::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-56%);
+  height: 111%;
+  width: 0%;
+  background-color: #77777749;
+  transition: 1s;
+  z-index: -1;
+  border-radius: 5px;
+}
+.team .container .card:hover::after {
+  width: 90%;
+}
+.team .container .card .data {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.team .container .card .data img {
+  max-width: calc(100% - 60px);
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.team .card:hover img {
+  filter: grayscale(100%);
+}
+
+.team .container .card .data .social {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .container .card .data .social i {
+  margin: 20px auto;
+  color: #777777;
+}
+
+.team .container .card .info {
+  margin-left: 67px;
+}
+.team .container .card .info h3 {
+}
+.team .container .card .info p {
+}
+/*  TEAM MEMBERS */
