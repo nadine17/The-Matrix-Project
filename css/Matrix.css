@@ -768,10 +768,6 @@ ul {
 .team .container .card .info {
   margin-left: 67px;
 }
-.team .container .card .info h3 {
-}
-.team .container .card .info p {
-}
 /*  TEAM MEMBERS */
 
 /* services */
@@ -985,3 +981,69 @@ ul {
   transform: translateX(-50%);
 }
 /* SKILLS */
+/* HOW IT WORK */
+.work-steps {
+  padding: var(--main-padding);
+  background-color: var(--section-background);
+}
+.work-steps .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .work-steps .container {
+    flex-direction: column;
+  }
+}
+.work-steps .container .image {
+  max-width: 100%;
+  margin-right: 100px;
+}
+@media (max-width: 767px) {
+  .work-steps .container .image {
+    margin: 0 0 50px;
+  }
+}
+.work-steps .container .box {
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+.work-steps .container .box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  background-color: rgba(255, 255, 255, 0.397);
+  opacity: 0;
+  z-index: 2;
+}
+.work-steps .container .box:hover:before {
+  animation: flashing 0.7s;
+}
+@keyframes flashing {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+.work-steps .container .box img {
+  width: 64px;
+  margin-right: 20px;
+}
+/* HOW IT WORK */
