@@ -29,10 +29,12 @@ ul {
   padding: 0;
 }
 .container {
+  padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -648,6 +650,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 80px;
+  padding-top: 54px;
 }
 
 .testimonials .container .dev {
@@ -890,6 +893,8 @@ ul {
 }
 .progress {
   padding-top: 60px;
+  width: 90%;
+  margin: auto;
 }
 
 .prog-sec {
