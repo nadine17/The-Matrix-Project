@@ -34,7 +34,6 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -199,7 +198,7 @@ ul {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #fafafa;
+  background-color: #dedbdb;
   z-index: -1;
   transition: 0.4s;
   border-radius: 3px;
@@ -1470,7 +1469,7 @@ ul {
   flex-wrap: wrap;
 }
 .discount .image {
-  background-image: url(../imgs/discount-background1.jpg);
+  background-image: url(../images/discount-background1.jpg);
   background-size: cover;
   color: white;
   flex-basis: 50%;
@@ -1556,6 +1555,16 @@ ul {
 .discount .content img {
   width: 300px;
   max-width: 100%;
+}
+
+@keyframes change-background {
+  0%,
+  100% {
+    background-image: url("../images/discount-background1.jpg");
+  }
+  50% {
+    background-image: url("../images/discount-background2.jpg");
+  }
 }
 /* End Discount */
 /* Start Footer */
